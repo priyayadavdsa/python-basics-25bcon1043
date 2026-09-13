@@ -19,4 +19,4 @@ python fibonacci.py
 python student_data.py
 
 ## Author
-Maintained by [Your Name].
+Maintained by [Priya Yadav].
