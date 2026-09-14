@@ -1,11 +1,12 @@
-def fibonacci(n):
+def fibonacci(term_count):
     sequence = []
-    a, b = 0, 1
-    for _ in range(n):
-        sequence.append(a)
-        a, b = b, a + b
+    current_term, next_term = 0, 1
+    for _ in range(term_count):
+        sequence.append(current_term)
+        current_term, next_term = next_term, current_term + next_term
     return sequence
 
+
 if __name__ == "__main__":
-    n = 8
-    print(f"Fibonacci sequence ({n} terms): {fibonacci(n)}")
+    term_count = 8
+    print(f"Fibonacci sequence ({term_count} terms): {fibonacci(term_count)}")
