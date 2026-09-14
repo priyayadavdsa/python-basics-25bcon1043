@@ -1,9 +1,13 @@
-def factorial(n):
-    result = 1
-    for i in range(1, n + 1):
-        result *= i
-    return result
+FIRST_POSITIVE_INTEGER = 1
+
+
+def factorial(number):
+    product = FIRST_POSITIVE_INTEGER
+    for factor in range(FIRST_POSITIVE_INTEGER, number + 1):
+        product *= factor
+    return product
+
 
 if __name__ == "__main__":
-    n = 5
-    print(f"Factorial of {n} is {factorial(n)}")
+    number = 5
+    print(f"Factorial of {number} is {factorial(number)}")
